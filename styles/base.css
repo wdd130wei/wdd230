@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #87CEEB;
+    color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilepicture {
+    width: 120px;
+    height: 80px;
+    border-radius: 0;
+    margin-right: 20px;
+    order: -1;
+    box-shadow:
+        5px 0 10px rgba(111, 115, 100, 0.5),
+        -5px 0 10px rgba(111, 115, 100, 0.5),
+        0 5px 10px rgba(111, 115, 100, 0.5),
+        0 -5px 10px rgba(111, 115, 100, 0.5);
+}
+
+nav {
+    background-color: #F0FFFF;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul, .card ul {
+    margin: 0 auto;
+    list-style-type: none;
+    margin-left: -2.5em;
+}
+
+nav ul li {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li:hover {
+    text-align: center;
+    text-decoration: none;
+    background: #7FFFD4
+}
+
+nav a:hover {
+    color: #DC143C;
+}
+
+main {
+    max-width: 1800px;
+    grid-gap: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+main h2 {
+    border-bottom: 1px solid #000;
+}
+
+.card {
+    box-shadow:
+        5px 0 10px rgba(111, 115, 100, 0.5),
+        -5px 0 10px rgba(111, 115, 100, 0.5),
+        0 5px 10px rgba(111, 115, 100, 0.5),
+        0 -5px 10px rgba(111, 115, 100, 0.5);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card h3{
+    margin: 0;
+    padding: 20px;
+    background-color: #87CEEB;
+    text-align: center; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0;
+}
+
+.card ul {
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+}
+
+.card li{
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    list-style-type: none;
+    }
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card p{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer {
+    background-color: #87CEEB;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
