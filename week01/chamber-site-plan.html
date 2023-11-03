@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Chamber of Commerce Site Pla</title>
+  <link type="text/css" rel="stylesheet" href="styles/chamber-site-plan.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Auckland Chamber of Commerce</h1>
+    <p>This name represents a city in which the chamber operates</p>
+  </header>
+
+  <main>
+    <hr />
+    <h2>Site Purpose</h2>
+    <p>The purpose of our website is to serve as a comprehensive platform for local business leaders. We facilitate networking events, activities, and fostering strong connections among local businesses. We are dedicated to supporting our members by sharing valuable information, resources, and opportunities.</p>
+    <hr />
+
+    <h2>Scenarios</h2>
+    <ol>
+        <li>How frequently are your events held?</li>
+        <li>What is the process for joining the chamber, and what are the membership requirements?</li>
+        <li>What are the advantages and benefits of becoming a chamber member?</li>
+    </ol>
+    <hr />
+
+    <h2>Color Schema</h2>
+    <table class="colors">
+      <tr>
+        <th>Primary</th>
+        <th>Secondary</th>
+      </tr>
+      <tr>
+        <td class="primary">[#33A7B4]</td>
+        <td class="secondary">[#2A91B7]</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>Typography</h2>
+    <h3>
+      Heading Font: Open Sans
+    </h3>
+    <h3>
+      Paragraph Font: Open Sans
+    </h3>
+    <hr />
+
+    <h2>Navigation</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Events</a>
+      <a href="#">Membership</a>
+    </nav>
+    <hr />
+
+    <h2>Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home">Home</div>
+      <div class="sm-page2">Events</div>
+      <div class="sm-page3">Membership</div>
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+    <hr />
+
+    <h2>Wireframes</h2>
+    <h3>Desktop</h3>
+    <img src="images/wireframe-desktop.png" alt="desktop wireframe" />
+    <h3>Mobile</h3>
+    <img src="images/wireframe-mobile.png" alt="desktop wireframe" />
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span>
+    Zhi Wei
+    New Zealand</p>
+    </footer>
+    <script>
+        const todaysdate = new Date();
+        const year = todaysdate.getFullYear();
+        document.getElementById('currentyear').textContent = year;
+    </script>
+</body>
+
+</html>
