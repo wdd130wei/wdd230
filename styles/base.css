@@ -1,19 +1,27 @@
-body {
+* {
     font-family: 'Roboto', sans-serif;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 header {
     background-color: #87CEEB;
     color: black;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	cursor: pointer;
+    font-size: 2rem;
 }
 
 .profilepicture {
@@ -30,41 +38,88 @@ header {
 }
 
 nav {
-    background-color: #F0FFFF;
-    margin: 0 auto;
-    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-nav ul, .card ul {
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    background-color: #F0FFFF;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.navigation a:hover {
+	font-weight: 700;
+    color: #DC143C;
+}
+
+.navigation li:hover {
+    text-align: center;
+    text-decoration: none;
+    background: #7FFFD4
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "📍 ";
+}
+
+.card ul {
     margin: 0 auto;
     list-style-type: none;
     margin-left: -2.5em;
 }
 
-nav ul li {
+.navigation li {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     flex: 1 1 100%;
 }
 
-nav a {
+.navigation a {
     display: block;
     color: black;
     text-align: center;
     padding: 1rem;
     font-weight: bold;
     text-decoration: none;
-}
-
-nav li:hover {
-    text-align: center;
-    text-decoration: none;
-    background: #7FFFD4
-}
-
-nav a:hover {
-    color: #DC143C;
 }
 
 main {
@@ -111,8 +166,8 @@ main h2 {
 }
 
 .card li{
-    margin: 0;
-    padding: 10px;
+    margin-left: 50px;
+    padding: 5px;
     text-align: left;
     list-style-type: none;
     }
