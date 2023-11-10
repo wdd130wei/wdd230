@@ -11,7 +11,7 @@
 header {
     background-color: rgba(42, 145, 183, 0.5);
     color: black;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 150px auto;
     z-index: 2;
     position: relative;
@@ -33,9 +33,7 @@ header {
     justify-self: center;
     align-self: center;    
 }
-nav {
-    margin-left: 50px;
-}
+
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
@@ -43,7 +41,7 @@ nav {
 	background-color: #eee;
 	position: absolute;
 	top: 1.5rem;
-	right: 1.5rem;
+	right: 2.5rem;
 }
 #menu::before {
 	content: "☰";
@@ -110,26 +108,13 @@ nav {
 
 
 /* Hero */
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: -100px;
-    z-index: 1;
-    position: relative;
-}
-#hero-box {
-    grid-column: 1/4;
-    grid-row: 1/4;
-
-}
 #hero-img{
     width: 100%;
     height: 750px;
 }
 #hero-msg {
     font-size: 1rem;
-    grid-column: 1/3;
-    grid-row: 2/3;
+
     margin-top: 100px;
     margin-left: 200px;
     color: white;
@@ -166,16 +151,8 @@ nav {
 /* Main */
 .home-grid {
     color: black;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-.description {
-    grid-column: 1/6;
-    grid-row: 1/3;
 }
 .description-text {
-    grid-column: 6/11;
-    grid-row: 1/3;
     margin: 50px;
     margin-top: 100px;
 }
@@ -191,49 +168,25 @@ nav {
 
 
 /* Event container inlcuding photo and text*/
-.event-container {
-    position:relative;
-    grid-column: 1/6;
-    grid-row: 6/9;
-    text-align: center;
-}
-.event-text {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.current-event-text {
     color: #E79115;
+    margin: 50px;
+    margin-top: 100px;
 }
 
 
 
 /* Membershihp container inlcuding photo and text*/
-.membership-container {
-    position: relative;
-    grid-column: 6/11;
-    grid-row: 6/9;
-    text-align: center;
-} 
 .membership-text {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    color: black;
+    margin: 50px;
+    margin-top: 100px;
 }
 
 
 
 /* Join us container inlcuding photo and button*/
-.join-us-container {
-    grid-column: 1/6;
-    grid-row: 9/11;
-    text-align: center;
-    position: relative;
-}
 .join-button2 {
-    grid-column: 1/6;
-    grid-row: 10/11;
     margin: 50px;
     margin-top: 100px;
     background-color: #E79115;
@@ -258,8 +211,6 @@ nav {
     -5px 0 10px rgba(111, 115, 100, 0.5),
     0 5px 10px rgba(111, 115, 100, 0.5),
     0 -5px 10px rgba(111, 115, 100, 0.5);
-    grid-column: 6/11;
-    grid-row: 9/11;
     margin: 50px;
     border-radius: 15px;
     margin-top: 100px;
@@ -293,8 +244,8 @@ footer {
     padding: 25px 50px;
     margin-top: 200px; 
     display: flex;
-    justify-content: space-around;
-    align-items: center;    
+	flex-direction: column;
+	list-style: none    
 }
 footer a {
     text-align: center;
@@ -303,10 +254,11 @@ footer a {
 }
 footer p {
     font-size: 1.2em;
+    padding: 10px;
 }
-footer p a:hover {
+footer a:hover {
     text-decoration: underline;
-    color: black;
+    color: #DC143C;
 }
 footer .social img {
     padding-top: 15px;
