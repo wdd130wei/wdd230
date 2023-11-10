@@ -1,0 +1,27 @@
+@media screen and (min-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+
+    }
+
+    main h2 {
+        grid-column: 1/7;
+        grid-row: 1;
+    }
+    
+
+    #menu {
+		display: none;
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
