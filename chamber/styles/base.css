@@ -18,7 +18,6 @@ header {
 }
 .logo {
     width: 160px;
-    grid-column: 1/2;
     height: 80px;
     border-radius: 0;
     margin-left: 50px;
