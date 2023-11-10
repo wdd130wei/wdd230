@@ -18,7 +18,7 @@ header {
 }
 .logo {
     width: 160px;
-    grid-template-columns: 1/2;
+    grid-column: 1/2;
     height: 80px;
     border-radius: 0;
     margin-left: 50px;
