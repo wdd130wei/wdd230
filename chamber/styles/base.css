@@ -30,7 +30,7 @@ header {
         0 5px 10px rgba(111, 115, 100, 0.5),
         0 -5px 10px rgba(111, 115, 100, 0.5);
 }
-#logo_link {
+#logo_link_top, #logo_link_buttom {
     justify-self: center;
     align-self: center;    
 }
