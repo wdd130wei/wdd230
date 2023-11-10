@@ -5,6 +5,9 @@ document.getElementById('currentyear').textContent = year;
 let oLastModified = new Date(document.lastModified);
 document.getElementById('lastModified').textContent = 'Last modification: ' + oLastModified;
 
+
+
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -12,6 +15,10 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+
+
 
 const modeButton = document.querySelector('#mode');
 const main = document.querySelector('main')
