@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*title and profile photo*/
 header {
     background-color: #87CEEB;
     color: black;
@@ -16,14 +17,11 @@ header {
     justify-content: center;
 }
 
-#mode {
-	position: absolute;
-	top: 1rem;
-	left: 2rem;
-	cursor: pointer;
-    font-size: 2rem;
+header h1 {
+    font-weight: bold;
 }
 
+/*profile photo*/
 .profilepicture {
     width: 120px;
     height: 80px;
@@ -37,12 +35,56 @@ header {
         0 -5px 10px rgba(111, 115, 100, 0.5);
 }
 
+/* change day or night mode */
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	cursor: pointer;
+    font-size: 2rem;
+}
+
+
+/*navigation*/
 nav {
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    background-color: #F0FFFF;
+}
+.navigation li {
+	display: none;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+    font-weight: bold;
+}
+.navigation a:hover {
+	font-weight: 700;
+    color: #DC143C;
+}
 
+.navigation li:hover {
+    text-align: center;
+    text-decoration: none;
+    background: #7FFFD4
+}
+
+
+/*menu button*/
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
@@ -61,33 +103,6 @@ nav {
 	content: "X";
 }
 
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-    background-color: #F0FFFF;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-}
-.navigation a:hover {
-	font-weight: 700;
-    color: #DC143C;
-}
-
-.navigation li:hover {
-    text-align: center;
-    text-decoration: none;
-    background: #7FFFD4
-}
-
 .open li {
 	display: block;
 	width: 100%;
@@ -100,44 +115,68 @@ nav {
 	content: "📍 ";
 }
 
-.card ul {
-    margin: 0 auto;
-    list-style-type: none;
-    margin-left: -2.5em;
-}
-
-.navigation li {
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    flex: 1 1 100%;
-}
-
-.navigation a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
+/*main*/
 main {
-    max-width: 1800px;
     grid-gap: 20px;
     margin: 10px;
     padding: 10px;
 }
 
-header h1 {
-    font-weight: bold;
+
+/*hero img and text*/
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+    width: 80%;
+    height: auto;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+
+
+/*main h2 text*/
 main h2 {
     border-bottom: 1px solid #000;
 }
 
-.card {
+
+/*learning activity and weather*/
+.card1 ul, .card2 ul  {
+    margin: 0 auto;
+    list-style-type: none;
+    margin-left: -2.5em;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+}
+
+.card1, .card2 {
     box-shadow:
         5px 0 10px rgba(111, 115, 100, 0.5),
         -5px 0 10px rgba(111, 115, 100, 0.5),
@@ -147,7 +186,7 @@ main h2 {
     border-radius: 15px;
 }
 
-.card h3{
+.card1 h3, .card2 h3{
     margin: 0;
     padding: 20px;
     background-color: #87CEEB;
@@ -158,32 +197,27 @@ main h2 {
     border-bottom-right-radius: 0;
 }
 
-.card ul {
-    border-top-left-radius: 0; 
-    border-top-right-radius: 0; 
-    border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px;
-}
-
-.card li{
+.card1 li, .card2 li{
     margin-left: 50px;
     padding: 5px;
     text-align: left;
     list-style-type: none;
     }
 
-.card a {
+.card1 a, .card2 a {
     text-decoration: none;
     color: black;
 }
 
-.card p{
+.card1 p, .card2 p{
     margin-top: 20px;
     padding: 20px;
     text-align: center;
     list-style-type: none;
 }
 
+
+/*footer*/
 footer {
     background-color: #87CEEB;
     color: black;

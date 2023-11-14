@@ -22,7 +22,7 @@
 <body>
     <header>
         <h1>Zhi Wei</h1>
-        <img class="profilepicture" src="images/picture.jpg" alt="Your Profile Image">
+        <img class="profilepicture" src="images/picture.webp" alt="Your Profile Image" loading="lazy">
         <div id="mode">
             🕶️
         </div>
@@ -37,11 +37,23 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <img src="images/hero-large.webp" alt="table setting" loading="lazy" width="960" height="600">
+            </picture>
+            <div class="herolabel">
+                <p>Taipei Taiwan Temple</p>
+            </div>
+        </div>
+
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
+
+        <section class="card1">
             <h3>Learning Activities</h3>
             <ul>
                 <li><a href="#">Week 01</a></li>
+
                 <li>Week 02
                     <ul>
                         <li><a href="https://wdd130wei.github.io/wdd230/week02/design.html">Design Principles</a></li>
@@ -49,24 +61,41 @@
                         <li><a href="https://wdd130wei.github.io/wdd230/week02/bom.html">DOM Manipulation</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Week 03</a></li>
+
+                <li>Week 03
+                    <ul>
+                        <li><a href="week03/images/landscape_resized.webp">WebP</a></li>
+                        <li><a href="week03/lazyload.html">Lazyload</a></li>
+                        <li><a href="week03/responsive-images.html">Responsive Images</a></li>
+                        <li><a href="week03/bom.html">Web Storage API - localStorage</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#">Week 04</a></li>
                 <li><a href="#">Week 05</a></li>
                 <li><a href="#">Week 06</a></li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card2">
             <h3>Information</h3>
             <p>Weather: Data Not Available</p>
-            <p>Number of Visits: Data Not Available</p>
+            <p><span class="label">Number of Visits:</span>
+                <span class="visits"></span></p>
         </section>
+
     </main>
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7159.749228385422!2d119.53198507325483!3d26.200756783446607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3441069596367be9%3A0xa1c8fa06f86485af!2zQ2hpbmEsIEZ1IEppYW4gU2hlbmcsIEZ1IFpob3UgU2hpLCBMaWFuIEppYW5nIFhpYW4sIOiOsuiNt-ilv-i3rzYtNuWPtyDpgq7mlL_nvJbnoIE6IDM1MDUwMA!5e0!3m2!1sen!2snz!4v1699932154412!5m2!1sen!2snz" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
     <footer>
         <p>&copy; <span id="currentyear"></span>
         Zhi Wei
         New Zealand</p>
         <p id="lastModified"></p>
     </footer>
+
     <script src="scripts/getDates.js"></script>
 </body>
 </html>
