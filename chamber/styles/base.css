@@ -253,3 +253,45 @@ footer a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
+#visitsCount {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.sk-ww-google-calendar {
+
+    margin: 20px;
+    padding: 20px;
+}
+
+#sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.tradingview-widget-container {
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }

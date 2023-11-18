@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Zhi Wei Project.">
+    <meta name="author" content="Zhi Wei">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Auckland Business Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://aucklandchamber.co.nz/wp-content/uploads/2023/02/iStock-1362670493-600x403.jpg">
+    <meta property="og:url" content="https://wdd130wei.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <a id="logo_link_top" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Auckland Business Chamber Logo">
+        </a>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="sidebar">
+            <span class="visits" id="visitsCount"></span>
+
+            <div class='sk-ww-google-calendar' data-embed-id='226929'></div><script src='https://widgets.sociablekit.com/google-calendar/widget.js' async defer></script>
+            
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                {
+                "colorTheme": "light",
+                "dateRange": "12M",
+                "exchange": "US",
+                "showChart": true,
+                "locale": "en",
+                "largeChartUrl": "",
+                "isTransparent": false,
+                "showSymbolLogo": false,
+                "showFloatingTooltip": false,
+                "width": "400",
+                "height": "600",
+                "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                "gridLineColor": "rgba(240, 243, 250, 0)",
+                "scaleFontColor": "rgba(106, 109, 120, 1)",
+                "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+            }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+
+        </aside>
+
+        <div class="photos">
+            <picture>
+                <source srcset="images/1-small.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/1-medium.webp" media="(max-width: 1000px)" loading="lazy">
+                <img src="images/1-large.webp" alt="table setting" loading="lazy">
+            </picture>
+
+            <picture>
+                <source srcset="images/2-small.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/2-medium.webp" media="(max-width: 1000px)" loading="lazy">
+                <img src="images/2-large.webp" alt="table setting" loading="lazy">
+            </picture>
+
+            <picture>
+                <source srcset="images/3-small.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/3-medium.webp" media="(max-width: 1000px)" loading="lazy">
+                <img src="images/3-large.webp" alt="table setting" loading="lazy">
+            </picture>
+
+            <picture>
+                <source srcset="images/4-small.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/4-medium.webp" media="(max-width: 1000px)" loading="lazy">
+                <img src="images/4-large.webp" alt="table setting" loading="lazy">
+            </picture>
+        
+            <picture>
+                <source srcset="images/5-small.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/5-medium.webp" media="(max-width: 1000px)" loading="lazy">
+                <img src="images/5-large.webp" alt="table setting" loading="lazy">
+            </picture>
+
+            <picture>
+                <source srcset="images/6-small.webp" media="(max-width: 500px)" loading="lazy">
+                <source srcset="images/6-medium.webp" media="(max-width: 1000px)" loading="lazy">
+                <img src="images/6-large.webp" alt="table setting" loading="lazy">
+            </picture>
+        </div>
+
+    </main>
+
+    <footer>
+        <a id="logo_link_buttom" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Auckland Business Chamber">
+        </a>
+        <div class="social">
+            <p>Follow</p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="contacts-wrapper">
+            <p>Zhi Wei</p>
+            <p>WDD230 Frontend Development Project</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
