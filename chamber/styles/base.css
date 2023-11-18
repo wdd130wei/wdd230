@@ -259,6 +259,7 @@ footer .social img {
     padding: 20px;
     text-align: center;
     width: 50%;
+    font-size: 1.2em;
 }
 
 .sk-ww-google-calendar {
@@ -304,3 +305,7 @@ footer .social img {
     opacity: .6;
     transform: scale(1.05);
   }
+
+  h1 {
+    font-size:1.5em;;
+}
