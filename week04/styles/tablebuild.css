@@ -1,0 +1,41 @@
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+th {
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+th:first-child {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+  }
+
+  th[scope="col"]:not(:first-child) {
+    background-color: grey;
+}
