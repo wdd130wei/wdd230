@@ -1,11 +1,5 @@
 @media screen and (min-width: 640px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-gap: 20px;
-
-    }
-
+    
     header {
         display: grid;
     }
@@ -44,13 +38,6 @@
         grid-row: 2/3;
     }
 
-
-    /* Main */
-    .home-grid {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-    }
-
     .description {
         grid-column: 1/6;
         grid-row: 1/3;
@@ -60,6 +47,18 @@
         grid-row: 1/3;
     }
 
+    /* Home Main */
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    /* Discover Main */
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
+    }
 
     /* Event container inlcuding photo and text*/
     .current-event-container {
@@ -75,7 +74,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
 
     /* Membershihp container inlcuding photo and text*/
     .membership-container {
@@ -94,7 +92,6 @@
 
     }
 
-
     /* Join us container inlcuding photo and button*/
     .join-us-container {
         grid-column: 1/6;
@@ -107,14 +104,12 @@
         grid-row: 10/11;
     }
 
-
     /* weather */
     .card {
         grid-column: 6/11;
         grid-row: 9/11;
     }
 
-    
     /* footer */
     footer {
         justify-content: space-around;
@@ -126,4 +121,37 @@
         max-height: 1500px;
     }
 
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    form {
+        grid-column: 1/2;
+    }
+    table {
+        grid-column: 2/3;
+    }
+    .join-main h2{
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 2rem 0;
+        padding: .5rem 2%;
+        color: var(--form-main-color);
+    }
+
+    form fieldset {
+        font-size: 1.2rem;
+
+    }
+    form label.req {
+        padding: .4rem;
+        font-size: 1rem;
+    }
+
+    
+    form input.submitBtn {
+        font-size: 1.2rem;
+    }
 }

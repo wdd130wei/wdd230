@@ -1,10 +1,22 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+    --form-main-color: navy;
+    --form-t-color: black;
+    --main-color:rgba(105, 224, 222, 0.2);
+  }
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 
 /* Header */
@@ -154,7 +166,6 @@ header {
     width: 600px;
     height: 500px;
 }
-
 
 
 /* Event container inlcuding photo and text*/
@@ -310,3 +321,131 @@ footer .social img {
     font-size:1.4em;;
 }
 
+
+/*----------- Join Page --------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------- MAIN --------------*/
+.join-main {
+    padding: 5% 5%;
+    min-height: 20rem;
+    max-width: 100%;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--form-main-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--form-main-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.req{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.mem {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem;
+}
+
+form label.req input{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#organization_description {
+    width: 100%;
+    height: 10rem;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--form-main-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 100%;
+}
+
+form label.req input:required {
+    border-left: red solid 6px;
+}
+
+form label.req input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+table {
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+th {
+	font-size: larger;
+}
+
+td {
+	text-align: left;
+}
+
+th:first-child {
+    background-color: var(--main-color);
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+  }
+
+  th[scope="col"]:not(:first-child) {
+    background-color: var(--main-color);
+  }
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------- Thankyou Page --------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.thankyou-main h1, .thankyou-main p{
+    padding-top: 2rem;
+    text-align: center;
+}

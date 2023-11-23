@@ -46,3 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+/* Timestamp */
+document.addEventListener('DOMContentLoaded', function () {
+	var currentDateTime = new Date();
+	document.getElementById('timestamp').value = currentDateTime;
+});

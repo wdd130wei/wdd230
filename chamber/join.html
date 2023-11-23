@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Zhi Wei Project.">
+    <meta name="author" content="Zhi Wei">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Auckland Business Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://aucklandchamber.co.nz/wp-content/uploads/2023/02/iStock-1362670493-600x403.jpg">
+    <meta property="og:url" content="https://wdd130wei.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <a id="logo_link_top" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Auckland Business Chamber Logo">
+        </a>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="join.html">Membership</a></li>
+                <li><a href="#">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-main">
+        <h2>Application Form</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="firstname" class="req">Fist Name*<input type="text" id="firstname" name="firstname" required placeholder="Please enter your first name"></label>
+                <label for="lastname" class="req">bLast Name*<input type="text" id="lastname" name="lastname" required placeholder="Please enter your last name"></label>
+                <label for="email" class="req">Email*<input type="email" id="email" name="email" required placeholder="e.g. example@example.com"></label>    
+                <label for="telephone" class="req">Telephone*<input type="telephone" id="telephone" name="telephone" required></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Membership Options</div>
+                <label class="mem"><input type="checkbox" id="np" name="np" value="yes"> NP Membership </label>
+                <label class="mem"><input type="checkbox" id="bronze" name="bronze" value="yes"> Bronze Membership </label>
+                <label class="mem"><input type="checkbox" id="silver" name="silver" value="yes"> Silver Membership </label>
+                <label class="mem"><input type="checkbox" id="gold" name="gold" value="yes"> Gold Membership </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Business</legend>
+                <label for="organization_name" class="req">Organization Name*<input type="text" id="organization_name" name="organization_name" required></label>
+                <label for="title" class="req">Your Title<input type="title" id="title" name="title" pattern="[A-Za-z\- ]{7,}" placeholder="Title must be at least 7 charaters, hyphens, and spaces"></label>
+                <label for="organization_description" class="req"> Tell us about your business in a few sentences
+                    <textarea id="organization_description" name="organization_description" placeholder="e.g. What products or services do you offer?"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit Your Review" class="submitBtn">
+        </form>
+            
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" scope="colgroup">Membership Levels and Benefits</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Membership Levels</th>
+                        <th scope="col">Benefits</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>NP Membership</td>
+                        <td>
+                            <li>Cost: Free</li>
+                            <li>Access to special events</li>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Bronze Membership</td>
+                        <td>
+                            <li>Cost: $50 per year</li>
+                            <li>Access to special events</li>
+                            <li>Basic training resources</li>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Silver Membership</td>
+                        <td>
+                            <li>Cost: $70 per year</li>
+                            <li>Access to special events</li>
+                            <li>Advanced training sessions</li>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Gold Membership</td>
+                        <td>
+                            <li>Cost: $80 per year</li>
+                            <li>Access to special events</li>
+                            <li>Advanced training sessions</li>
+                            <li>Exclusive advertising opportunities</li>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+    <footer>
+        <a id="logo_link_buttom" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Auckland Business Chamber">
+        </a>
+        <div class="social">
+            <p>Follow</p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="contacts-wrapper">
+            <p>Zhi Wei</p>
+            <p>WDD230 Frontend Development Project</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
