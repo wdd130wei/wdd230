@@ -42,7 +42,7 @@
                 <label for="firstname" class="req">Fist Name*<input type="text" id="firstname" name="firstname" required placeholder="Please enter your first name"></label>
                 <label for="lastname" class="req">bLast Name*<input type="text" id="lastname" name="lastname" required placeholder="Please enter your last name"></label>
                 <label for="email" class="req">Email*<input type="email" id="email" name="email" required placeholder="e.g. example@example.com"></label>    
-                <label for="telephone" class="req">Telephone*<input type="telephone" id="telephone" name="telephone" required></label>
+                <label for="telephone" class="req">Telephone*<input type="tel" id="telephone" name="telephone" required></label>
             </fieldset>
             
             <fieldset>
@@ -57,7 +57,7 @@
             <fieldset>
                 <legend>Your Business</legend>
                 <label for="organization_name" class="req">Organization Name*<input type="text" id="organization_name" name="organization_name" required></label>
-                <label for="title" class="req">Your Title<input type="title" id="title" name="title" pattern="[A-Za-z\- ]{7,}" placeholder="Title must be at least 7 charaters, hyphens, and spaces"></label>
+                <label for="title" class="req">Your Title<input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" placeholder="Title must be at least 7 charaters, hyphens, and spaces"></label>
                 <label for="organization_description" class="req"> Tell us about your business in a few sentences
                     <textarea id="organization_description" name="organization_description" placeholder="e.g. What products or services do you offer?"></textarea>
                 </label>
@@ -83,36 +83,44 @@
                     <tr>
                         <td>NP Membership</td>
                         <td>
-                            <li>Cost: Free</li>
-                            <li>Access to special events</li>
+                            <ul>
+                                <li>Cost: Free</li>
+                                <li>Access to special events</li>
+                            </ul>
                         </td>
                     </tr>
     
                     <tr>
                         <td>Bronze Membership</td>
                         <td>
-                            <li>Cost: $50 per year</li>
-                            <li>Access to special events</li>
-                            <li>Basic training resources</li>
+                            <ul>
+                                <li>Cost: $50 per year</li>
+                                <li>Access to special events</li>
+                                <li>Basic training resources</li>
+                            </ul>
                         </td>
                     </tr>
     
                     <tr>
                         <td>Silver Membership</td>
                         <td>
-                            <li>Cost: $70 per year</li>
-                            <li>Access to special events</li>
-                            <li>Advanced training sessions</li>
+                            <ul>
+                                <li>Cost: $70 per year</li>
+                                <li>Access to special events</li>
+                                <li>Advanced training sessions</li>
+                            </ul>
                         </td>
                     </tr>
     
                     <tr>
                         <td>Gold Membership</td>
                         <td>
-                            <li>Cost: $80 per year</li>
-                            <li>Access to special events</li>
-                            <li>Advanced training sessions</li>
-                            <li>Exclusive advertising opportunities</li>
+                            <ul>
+                                <li>Cost: $80 per year</li>
+                                <li>Access to special events</li>
+                                <li>Advanced training sessions</li>
+                                <li>Exclusive advertising opportunities</li>
+                            </ul>
                         </td>
                     </tr>
                 </tbody>
