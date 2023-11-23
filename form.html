@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>[Zhi Wei] - WDD 230 - Web Frontend Development</title>
+        <meta name="description" content="WDD 230 - Web Frontend Development, Zhi Wei week4 team activity.">
+        <meta name="author" content="Zhi Wei">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <header>
+            <h1>Zhi Wei</h1>
+            <img class="profilepicture" src="images/picture.webp" alt="Your Profile Image" loading="lazy">
+            <div id="mode">
+                🕶️
+            </div>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="formmessage"></div>
+            <h2>Send Us Your Feedback!</h2>
+            <form method="get" action="record.html">
+                <fieldset>
+                    <legend>Your Account</legend>
+                    <label for="username" class="req">Username*<input type="text" id="username" name="username" required placeholder="Please enter your username"></label>
+                
+                    <label for="psssword" class="req">Password*<input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" placeholder="Password must be at least 8 charaters and alphanumeric"></label>
+                       
+                    <label for="confirmPassword" class="req">Re-enter Your Password<input type="password" id="confirmPassword" name="confirmPassword" required pattern="[a-zA-Z0-9]{8,}"></label>
+                       
+                    <label for="email" class="req">Email*<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"  title="Please enter a valid email address"></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Page Rating</legend>
+                    <label for="rating" class="req">Your Overall Rating</label>
+                    <div id="rangevalue">1</div>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </fieldset>
+              <input type="submit" value="Submit Your Review" class="submitBtn">
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span>
+            Zhi Wei
+            New Zealand</p>
+            <p id="lastModified"></p>
+        </footer>
+
+        <script>
+            //get the year for footer
+            const todaysdate = new Date();
+            const year = todaysdate.getFullYear();
+            document.getElementById('currentyear').textContent = year;
+            
+            let oLastModified = new Date(document.lastModified);
+            document.getElementById('lastModified').textContent = 'Last modification: ' + oLastModified;
+            
+            
+            //menu button
+            const hamButton = document.querySelector('#menu');
+            const navigation = document.querySelector('.navigation');
+            
+            hamButton.addEventListener('click', () => {
+                navigation.classList.toggle('open');
+                hamButton.classList.toggle('open');
+            });
+            
+            //day or night mode
+            const modeButton = document.querySelector('#mode');
+            const main = document.querySelector('main')
+            const links = document.querySelectorAll('.card a');
+            
+            modeButton.addEventListener('click', () => {
+                if (modeButton.textContent.includes("🕶️")) {
+                    links.forEach(link => {
+                        link.style.color = '#fff';
+                    });
+                    main.style.background = '#000';
+                    main.style.color = '#fff';
+                    modeButton.textContent = "🔆";
+                }
+                else {
+                    links.forEach(link => {
+                        link.style.color = '#000';
+                    });
+                    main.style.background = "#FFFFFF";
+                    main.style.color = "#000";
+                    modeButton.textContent = "🕶️";
+                }
+            })
+            
+            const rangevalue = document.getElementById("rangevalue");
+            const range = document.getElementById("rating");
+            
+            // RANGE event listener
+            range.addEventListener('change', displayRatingValue);
+            range.addEventListener('input', displayRatingValue);
+            
+            function displayRatingValue() {
+                rangevalue.innerHTML = range.value;
+            }
+            
+            // Checking password
+            const kp1 = document.querySelector("#password");
+            const kp2 = document.querySelector("#confirmPassword");
+            const message = document.querySelector("#formmessage");
+
+            kp2.addEventListener("focusout", checkSame);
+
+            function checkSame() {
+                if (kp1.value !== kp2.value) {
+                    message.textContent = "❗Key Phrases DO NOT MATCH!";
+                    message.style.visibility = "show";
+                    kp2.style.backgroundColor = "#fff0f3";
+                    kp1.value = "";
+                    kp2.value = "";
+                    kp1.focus();
+                } else {
+                    message.style.display = "none";
+                    kp2.style.backgroundColor = "#fff";
+                    kp2.style.color = "#000";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,280 @@
+:root {
+    --form-main-color: navy;
+    --main-bg-color: #87CEEB;
+    --main-t-color: black;
+  }
+  
+  
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*title and profile photo*/
+header {
+    background-color: var(--main-bg-color);
+    color: var(--main-t-color);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+/*profile photo*/
+.profilepicture {
+width: 120px;
+height: 80px;
+border-radius: 0;
+margin-right: 20px;
+order: -1;
+box-shadow:
+    5px 0 10px rgba(111, 115, 100, 0.5),
+    -5px 0 10px rgba(111, 115, 100, 0.5),
+    0 5px 10px rgba(111, 115, 100, 0.5),
+    0 -5px 10px rgba(111, 115, 100, 0.5);
+}
+
+
+/* change day or night mode */
+#mode {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+/*navigation*/
+nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #F0FFFF;
+}
+.navigation li {
+    display: none;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-t-color);
+    font-weight: bold;
+}
+.navigation a:hover {
+    font-weight: 700;
+    color: #DC143C;
+}
+
+.navigation li:hover {
+    text-align: center;
+    text-decoration: none;
+    background: #7FFFD4
+}
+
+
+/*menu button*/
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+h2{
+    font-weight: bold;
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    color: var(--form-main-color);
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--form-main-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+
+form label.req, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.req input{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 28rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#rating {
+    margin-bottom: 0;
+    width: 28rem;
+}
+
+#rangevalue {
+    font-size: 2rem;
+    color:navy;
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 6px;
+    width: 30rem;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--form-main-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 28rem;
+}
+
+form label.req input:required {
+    border-left: red solid 6px;
+}
+
+form label.req input:required:valid {
+    border-left: green solid 6px;
+}
+
+/*footer*/
+footer {
+    background-color: var(--main-bg-color);
+    color: var(--main-t-color);
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 45em) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    header, nav, main, footer {
+        max-width: 64em;
+        margin:auto;
+    }
+
+    h2{
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 2rem 0;
+        padding: .5rem 2%;
+        color: var(--form-main-color);
+    }
+
+    form fieldset {
+        font-size: 1.2rem;
+
+    }
+    form label.req {
+        padding: .4rem;
+        font-size: 1rem;
+    }
+
+    
+    form input.submitBtn {
+        font-size: 1.2rem;
+    }
+}

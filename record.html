@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>[Zhi Wei] - WDD 230 - Web Frontend Development</title>
+        <meta name="description" content="WDD 230 - Web Frontend Development, Zhi Wei week4 team activity.">
+        <meta name="author" content="Zhi Wei">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <header>
+            <h1>Zhi Wei</h1>
+            <img class="profilepicture" src="images/picture.webp" alt="Your Profile Image" loading="lazy">
+            <div id="mode">
+                🕶️
+            </div>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <p>Thanks for your feedback!</p>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span>
+            Zhi Wei
+            New Zealand</p>
+            <p id="lastModified"></p>
+        </footer>
+
+        <style>
+            main p {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 50px;
+
+            }
+        </style>
+
+        <script>
+            //get the year for footer
+            const todaysdate = new Date();
+            const year = todaysdate.getFullYear();
+            document.getElementById('currentyear').textContent = year;
+            
+            let oLastModified = new Date(document.lastModified);
+            document.getElementById('lastModified').textContent = 'Last modification: ' + oLastModified;
+        </script>
+
+    </body>
+</html>
