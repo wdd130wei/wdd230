@@ -1,0 +1,53 @@
+{
+    "ward": {
+      "name": "Auckland 3rd Branch",
+      "families": [
+        {
+          "familyName": "Wilson",
+          "moveInDate": "01/01/2010",
+          "numberOfPeople": 5,
+          "visitedByBishopric": true,
+          "familyMembers": [
+            {
+              "name": "Dan Wilson",
+              "gender": "Male",
+              "birthdate": "02/08/1990"
+            },
+            {
+              "name": "",
+              "gender": "Jane Wilson",
+              "birthdate": "03/11/1990"
+            },
+            {
+              "name": "Sam Wilson",
+              "gender": "Male",
+              "birthdate": "10/06/2015"
+            },
+            {
+              "name": "Emily Wilson",
+              "gender": "Female",
+              "birthdate": "12/01/2017"
+            }
+          ]
+        },
+        {
+          "familyName": "Johnson",
+          "moveInDate": "15/02/2011",
+          "numberOfPeople": 2,
+          "visitedByBishopric": false,
+          "familyMembers": [
+            {
+              "name": "Robert Johnson",
+              "gender": "Male",
+              "birthdate": "08/11/1988"
+            },
+            {
+              "name": "Sarah Johnson",
+              "gender": "Female",
+              "birthdate": "14/05/1992"
+            }
+          ]
+        }
+      ]
+    }
+}
