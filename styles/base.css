@@ -278,7 +278,7 @@ footer {
     justify-content: center;
 }
 
-figcaption::first-letter  {
+#weather-desc::first-letter  {
     text-transform: capitalize;
 }
 

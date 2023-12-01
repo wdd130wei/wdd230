@@ -59,7 +59,7 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#weather-desc');
 
 const apiKey = 'dce54304461cc7d7e0f2bce3ecdbc1a0';
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=26.20&lon=119.54&appid=${apiKey}&units=imperial`;
