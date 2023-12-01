@@ -1,7 +1,5 @@
 * {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -163,7 +161,7 @@ main h2 {
 
 
 /*learning activity and weather*/
-.card1 ul, .card2 ul  {
+.card1 ul {
     margin: 0 auto;
     list-style-type: none;
     margin-left: -2.5em;
@@ -173,7 +171,7 @@ main h2 {
     border-bottom-right-radius: 15px;
 }
 
-.card1, .card2 {
+.card1 {
     box-shadow:
         5px 0 10px rgba(111, 115, 100, 0.5),
         -5px 0 10px rgba(111, 115, 100, 0.5),
@@ -183,7 +181,7 @@ main h2 {
     border-radius: 15px;
 }
 
-.card1 h3, .card2 h3{
+.card1 h3 {
     margin: 0;
     padding: 20px;
     background-color: #87CEEB;
@@ -194,21 +192,60 @@ main h2 {
     border-bottom-right-radius: 0;
 }
 
-.card1 li, .card2 li{
+.card1 li {
     margin-left: 50px;
     padding: 5px;
     text-align: left;
     list-style-type: none;
     }
 
-.card1 a, .card2 a {
+.card1 a {
     text-decoration: none;
     color: black;
 }
 
-.card1 p, .card2 p{
+.card1 p {
     margin-top: 20px;
     padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+.card2 ul {
+    margin: 0 auto;
+    list-style-type: none;
+    margin-left: -2.5em;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0; 
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+}
+
+.card2 {
+    box-shadow:
+        5px 0 10px rgba(111, 115, 100, 0.5),
+        -5px 0 10px rgba(111, 115, 100, 0.5),
+        0 5px 10px rgba(111, 115, 100, 0.5),
+        0 -5px 10px rgba(111, 115, 100, 0.5);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card2 h3{
+    margin: 0;
+    padding: 20px;
+    background-color: #87CEEB;
+    text-align: center; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0;
+}
+
+.card2 p {
+    margin-top: 20px;
+    padding: 10px;
     text-align: center;
     list-style-type: none;
 }
@@ -220,4 +257,19 @@ footer {
     color: black;
     padding: 20px;
     text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px; */
+}
+
+figcaption::first-letter  {
+    text-transform: capitalize;
+}
+
+#current-temp {
+    margin-right: 10px;
 }

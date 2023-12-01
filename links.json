@@ -1,0 +1,86 @@
+{
+    "weeks": [
+        {
+            "week": "Week02",
+            "links": [
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/Zhi-WEI-the-sans/pen/zYeNOzw",
+                    "title": "Responsive Hamburger"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week02/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+
+        {
+            "week": "Week03",
+            "links": [
+                {
+                    "url": "week03/images/landscape_resized.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazyload"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Web Storage API - localStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Zhi-WEI-the-sans/pen/qBgxxax",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/w3 exercises.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week04/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week04/form-start/index.html",
+                    "title": "HTML Tables"
+                }
+            ]
+        },
+        {
+            "week": "Week05",
+            "links": [
+                {
+                    "url": "https://codepen.io/Zhi-WEI-the-sans/pen/YzBjaMd?editors=1100",
+                    "title": "CSS Pseudo-elements"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+
+}
