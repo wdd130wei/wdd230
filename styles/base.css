@@ -161,8 +161,7 @@ main h2 {
 
 
 /*learning activity and weather*/
-.card1 ul {
-    margin: 0 auto;
+#card1 ul {
     list-style-type: none;
     margin-left: -2.5em;
     border-top-left-radius: 0; 
@@ -171,7 +170,7 @@ main h2 {
     border-bottom-right-radius: 15px;
 }
 
-.card1 {
+#card1 {
     box-shadow:
         5px 0 10px rgba(111, 115, 100, 0.5),
         -5px 0 10px rgba(111, 115, 100, 0.5),
@@ -181,7 +180,7 @@ main h2 {
     border-radius: 15px;
 }
 
-.card1 h3 {
+#card1 h3 {
     margin: 0;
     padding: 20px;
     background-color: #87CEEB;
@@ -192,25 +191,38 @@ main h2 {
     border-bottom-right-radius: 0;
 }
 
-.card1 li {
-    margin-left: 50px;
-    padding: 5px;
+#card1 li {
+    margin-left: 30px;
+    padding: 0px;
     text-align: left;
     list-style-type: none;
     }
 
-.card1 a {
+#card1 a {
     text-decoration: none;
     color: black;
 }
 
-.card1 p {
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
+#card1 p {
+    /* margin-top: 20px; */
+    padding-left: 20px;
+    /* text-align: center; */
     list-style-type: none;
 }
 
+#assignments section{
+    display: flex;
+}
+
+#assignments ul{
+    display: flex;
+
+}
+
+#assignments a:hover {
+    font-weight: 500;
+    color: #DC143C;
+}
 
 .card2 ul {
     margin: 0 auto;
@@ -251,6 +263,7 @@ main h2 {
 }
 
 
+
 /*footer*/
 footer {
     background-color: #87CEEB;
@@ -263,7 +276,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 10px; */
 }
 
 figcaption::first-letter  {
@@ -273,3 +285,4 @@ figcaption::first-letter  {
 #current-temp {
     margin-right: 10px;
 }
+

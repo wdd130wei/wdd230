@@ -1,6 +1,23 @@
 {
     "weeks": [
         {
+            "week": "Week01",
+            "links": [
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week01/holygrail.html",
+                    "title": "Holygrail"
+                },
+                {
+                    "url": "https://codepen.io/Zhi-WEI-the-sans/pen/qBgJyKr",
+                    "title": "Applied JavaScript"
+                },
+                {
+                    "url": "https://wdd130wei.github.io/wdd230/week01/media-query.html",
+                    "title": "CSS Media Queries"
+                }
+            ]
+        },
+        {
             "week": "Week02",
             "links": [
                 {

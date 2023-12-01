@@ -33,7 +33,7 @@
         grid-row: 4/5;
     }
     
-    .card1{
+    #card1{
         grid-column: 1/6;
         grid-row: 5/9;
     }
