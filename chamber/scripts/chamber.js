@@ -84,7 +84,7 @@ const displayLinks = (members) => {
 
         let urlElement = document.createElement('a');
         urlElement.href = member.url;
-        urlElement.textContent = "Visit Website";
+		urlElement.textContent = member.url;
 
         let logoElement = document.createElement('img');
         logoElement.setAttribute('src', member.imageurl);

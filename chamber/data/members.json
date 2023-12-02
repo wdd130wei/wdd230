@@ -2,10 +2,64 @@
     "members":  [
         {
             "name": "On Beam Consulting",
-            "address": "17a Ferndale Road, Mt Wellington, Auckland",
+            "address": "17a Ferndale Road, Auckland",
             "phone": "+64 21 947 052",
-            "url": "https://onbeam.nz",
+            "url": "https://www.onbeam.nz",
             "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2021/11/Logo-White-BG.png",
+            "membership": "NP"
+        },
+
+        {
+            "name": "Both Brains IT Support",
+            "address": "99 Hurtsmere Road, Auckland",
+            "phone": "+64 0800 64 68 48",
+            "url": "https://www.bothbrains.com/",
+            "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2023/02/LinkedIn.png",
+            "membership": "NP"
+        },
+
+        {
+            "name": "Convera",
+            "address": "9 Karanghape Road, Auckland",
+            "phone": "+64 866 381 6551",
+            "url": "https://www.convera.com/",
+            "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2023/10/Convera-Logo-1.jpg",
+            "membership": "NP"
+        },
+
+        {
+            "name": "Luma Analytics",
+            "address": "Level 3, 152 Quay Street, Auckland",
+            "phone": "+64 274 670912",
+            "url": "https://www.lumaanalytics.com/",
+            "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2023/10/Luma-Analytics-Logo-.png",
+            "membership": "NP"
+        },
+
+        {
+            "name": "Cheal Consultants",
+            "address": "Level 1, 4 Horomatangi Street, Auckland",
+            "phone": "+64 7 378 6405",
+            "url": "https://www.cheal.co.nz/",
+            "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2023/08/LinkedIn-Photo.jpg",
+            "membership": "NP"
+        },
+
+        {
+            "name": "Customs Brokerage",
+            "address": "4 Queen Street, Auckland",
+            "phone": "+64 237 296 7357",
+            "url": "https://www.cusmode.co.nz/",
+            "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2023/11/Capture-5.jpg",
+            "membership": "NP"
+        },
+
+        {
+            "name": "Native Digital",
+            "address": "124 Manukau Road, Auckland",
+            "phone": "+64 0508 462 848",
+            "url": "https://www.nativedigital.co.nz/",
+            "imageurl": "https://businesssearchnz.co.nz/wp-content/uploads/listing-uploads/logo/2023/02/native-digital-square.png",
             "membership": "NP"
         }
     ]
