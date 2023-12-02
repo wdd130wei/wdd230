@@ -51,3 +51,58 @@ document.addEventListener('DOMContentLoaded', function () {
 	var currentDateTime = new Date();
 	document.getElementById('timestamp').value = currentDateTime;
 });
+
+
+
+const baseURL = "https://wdd130wei.github.io/wdd230/";
+
+const linksURL = "https://wdd130wei.github.io/wdd230/chamber/data/members.json";
+
+
+const membersContainer = document.querySelector('#directory-grid');
+
+async function getLinks() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    displayLinks(data.members);
+}
+
+getLinks();
+
+const displayLinks = (members) => {
+    members.forEach((member) => {
+        let memberElement = document.createElement('section');
+
+        let nameElement = document.createElement('p');
+        nameElement.textContent = member.name;
+
+        let addressElement = document.createElement('p');
+        addressElement.textContent = member.address;
+
+        let phoneElement = document.createElement('p');
+        phoneElement.textContent = member.phone;
+
+        let urlElement = document.createElement('a');
+        urlElement.href = member.url;
+        urlElement.textContent = "Visit Website";
+
+        let logoElement = document.createElement('img');
+        logoElement.setAttribute('src', member.imageurl);
+        logoElement.setAttribute('alt', 'Company logo');
+        logoElement.setAttribute('loading', 'lazy');
+        logoElement.setAttribute('width', '200');
+        logoElement.setAttribute('height', '200');
+
+        let membershipElement = document.createElement('p');
+        membershipElement.textContent = `Membership: ${member.membership}`;
+
+        memberElement.appendChild(nameElement);
+        memberElement.appendChild(addressElement);
+        memberElement.appendChild(phoneElement);
+        memberElement.appendChild(urlElement);
+        memberElement.appendChild(logoElement);
+        memberElement.appendChild(membershipElement);
+
+        membersContainer.appendChild(memberElement);
+    });
+};
