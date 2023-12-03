@@ -1,6 +1,6 @@
 const baseURL = "https://wdd130wei.github.io/wdd230/";
 
-const linksURL = "https://wdd130wei.github.io/wdd230/links.json";
+const linksURL = "https://wdd130wei.github.io/wdd230/data/links.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
