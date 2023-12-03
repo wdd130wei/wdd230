@@ -154,4 +154,20 @@
     form input.submitBtn {
         font-size: 1.2rem;
     }
+
+    /*----------- Directory Page --------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+    .grid {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .grid section {
+        width: 100%;
+
+    }
+    
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
 }
