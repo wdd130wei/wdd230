@@ -273,11 +273,18 @@ footer .social img {
     font-size: 1.2em;
 }
 
-.sk-ww-google-calendar {
 
+/*----------- Discover Page --------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.sk-ww-google-calendar {
     margin: 20px;
     padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
 
 #sidebar {
     display: grid;
@@ -302,6 +309,10 @@ footer .social img {
     border: 1px solid #ccc;
   }
 
+.photos figure {
+    margin-bottom: 50px;
+}
+
 .photos img {
     width: 90%;
     height: auto;
@@ -312,14 +323,16 @@ footer .social img {
     transition: transform .5s;
 }
 
-  .photos img:hover {
-    opacity: .6;
-    transform: scale(1.05);
+.photos figcaption {
+    text-align: center;
   }
 
-  h1 {
+h1 {
     font-size:1.4em;;
 }
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
 
 
 /*----------- Join Page --------------*/
