@@ -108,21 +108,31 @@ const displayLinks = (members) => {
 };
 
 
-/* Toggle */
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+// /* Toggle */
+document.addEventListener('DOMContentLoaded', function () {
+    const directory = document.getElementById('directory-grid') !== null;
 
-display.classList.add("grid");
+    if (directory) {
+        const gridbutton = document.querySelector("#grid");
+        const listbutton = document.querySelector("#list");
+        const display = document.querySelector("#directory-grid");
 
-gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
+        display.classList.add("grid");
 
-listbutton.addEventListener("click", () => {
-	display.classList.add("list");
-	display.classList.remove("grid");
+        if (display && gridbutton) {
+            gridbutton.addEventListener("click", () => {
+                display.classList.add("grid");
+                display.classList.remove("list");
+            });
+        }
+
+        if (display && listbutton) {
+            listbutton.addEventListener("click", () => {
+                display.classList.remove("grid");
+                display.classList.add("list");
+            });
+        }
+    }
 });
 
 
@@ -132,8 +142,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weather-desc');
 
-const apiKey = 'dce54304461cc7d7e0f2bce3ecdbc1a0';
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=26.20&lon=119.54&appid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=36.86&lon=174.76&appid=dce54304461cc7d7e0f2bce3ecdbc1a0&units=imperial`;
 
 async function apiFetch(url) {
     try {

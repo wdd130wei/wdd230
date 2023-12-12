@@ -227,7 +227,6 @@ header {
     border-bottom-right-radius: 0;
 }
 .card p{
-    margin-top: 20px;
     padding: 20px;
     text-align: center;
     list-style-type: none;
@@ -237,7 +236,20 @@ header {
     transform: scale(1.1);
 }
 
+/* Weather */
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#weather-desc::first-letter  {
+    text-transform: capitalize;
+}
+
+#current-temp {
+    margin-right: 10px;
+}
 
 /* footer */
 footer {
